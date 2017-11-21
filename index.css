@@ -65,13 +65,13 @@ body > .main > div
 .global
 {
     text-decoration: none;
-    color: rgba(0, 36, 241, 0.88);
+    color: rgba(0, 36, 241, .88);
 }
 
 .local
 {
     text-decoration: none;
-    color: rgba(7, 56, 190, 0.61);
+    color: rgba(7, 56, 190, .61);
 }
 
 .header
@@ -142,7 +142,6 @@ body > .main > div
     margin-right: 10px;
 }
 
-
 .search_control
 {
     width: 90%;
@@ -155,7 +154,6 @@ body > .main > div
 {
     height: 36px;
     background-color: #ffdb4d;
-    /* border-radius: 0; */
     border: none;
     width: 10%;
     font-size: .8em;
