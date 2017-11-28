@@ -1,3 +1,8 @@
+body
+{
+    width: 1200px;
+}
+
 .main
 {
     display: grid;
@@ -23,7 +28,7 @@ ul:nth-child(2) > li
 
 body > .main > div
 {
-    font-family: arial;
+    font-family: Arial, Helvetica, sans-serif;;
 }
 
 .small
@@ -38,16 +43,32 @@ body > .main > div
 
 .blue
 {
-    color: rgba(0, 36, 241, .88);
+    color: #0054b9;
 }
 
 .city
 {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 18px;
+    margin-left: -15px;
     grid-area: a;
-    font-size: .7em;
+    font-size: 12px;
     color: #999;
+}
+
+.login
+{
+    font-size: 13px;
+}
+
+.mail-login
+{
+    font-size: 13px;
+}
+
+.login::first-letter
+{
+    color: red;
 }
 
 body > .main > div
@@ -60,18 +81,21 @@ body > .main > div
     padding-left: 50%;
     grid-area: i;
     padding-top: 16px;
+    font-size: 13px;
 }
 
 .global
 {
     text-decoration: none;
-    color: rgba(0, 36, 241, .88);
+    color: #0054b9;
+    font-size: 20px;
 }
 
 .local
 {
     text-decoration: none;
-    color: rgba(7, 56, 190, .61);
+    color: #6da2e1;
+    font-size: 20px;
 }
 
 .header
@@ -79,31 +103,38 @@ body > .main > div
     padding-left: 6%;
 }
 
-.news-content ul li
+.news
+{
+    margin-left: -40px;
+}
+
+.news-content ul li:not(.last)
 {
     margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.last
+{
+    font-size: 14px;
+    list-style-type: none;
 }
 
 .logo
 {
-    text-align: center;
-    margin-top: 19px;
-    padding-left: 30%;
-    vertical-align: bottom;
     grid-area: e;
-    font-size: 2em;
-    font-family: arial;
+}
+
+.logo > img
+{
+    width: 45%;
+    margin: -23px 0 0 50%;
 }
 
 .fon
 {
     padding-top: 30%;
     padding-left: 10%;
-}
-
-.logo:first-letter
-{
-    color: red;
 }
 
 .gray
@@ -144,7 +175,7 @@ body > .main > div
 
 .search_control
 {
-    width: 90%;
+    width: 80%;
     height: 36px;
     box-sizing: border-box;
     border: 2px solid #ffdb4d;
@@ -159,6 +190,23 @@ body > .main > div
     font-size: .8em;
     margin-left: -7px;
     margin-bottom: -1px;
+    margin-top: -10px;
+}
+
+.arrow
+{
+    margin-top: -20px;
+    margin-left: -5px;
+}
+
+.search_button
+{
+    margin-top: -10px;
+}
+
+.search img
+{
+    margin-bottom: -15px;
 }
 
 .widget
@@ -166,14 +214,46 @@ body > .main > div
     grid-area: l;
 }
 
+.service_description
+{
+    margin-bottom: 8px;
+}
+
+.service_description:nth-child(2n)
+{
+    margin-top: 8px;
+}
+
+.video
+{
+    margin-bottom: -4px;
+}
+
 .right-widget
 {
     grid-area: v;
+    margin-left: 20px;
 }
 
 .center-widget
 {
     grid-area: t;
+    margin-left: 20px;
+}
+
+.telename
+{
+    font-size: 110%;
+}
+
+.wither
+{
+    width: 25%;
+}
+
+.color
+{
+    width: 10%;
 }
 
 .img
